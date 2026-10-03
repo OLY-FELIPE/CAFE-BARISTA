@@ -11,15 +11,16 @@ body {
 }
 
 header {
-    background-color: #5d4037;
+    background: linear-gradient(135deg, #4e342e, #8d6e63);
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 50px 20px;
 }
 
 header h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+    font-size: 46px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
 }
 
 header p {
@@ -74,11 +75,12 @@ section h2 {
 }
 
 .producto {
-    background-color: white;
-    width: 280px;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
 }
 
 .producto h3 {
